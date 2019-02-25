@@ -35,12 +35,7 @@ router.get('/add', (req, res, next) => {
 
   res.render('books/details', {
     title: 'Add New Book',
-    books: {
-      Title: "",
-      Price: "",
-      Author: "",
-      Genre: ""
-    }
+    books: ''
   });
 
 });
@@ -81,7 +76,7 @@ router.get('/:id', (req, res, next) => {
     else {
       //show the edit view
       res.render('books/details', {
-        title: 'Edit Books',
+        title: 'Edit Book',
         books: books
       });
     }
@@ -126,7 +121,7 @@ router.get('/delete/:id', (req, res, next) => {
       res.end(err);
     }
     else {
-      //refresh the contact list
+      //refresh the book list
       res.redirect('/books');
     }
   });
