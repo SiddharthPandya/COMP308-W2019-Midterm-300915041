@@ -1,5 +1,12 @@
 /* custom JS goes here */
 
+/* 
+   File Name: app.js
+   Author: Siddharth Pandya
+   Student ID: 300915041
+   Web App Name: COMP308-W2019-Midterm-300915041 (My Favourite Books)
+*/
+
 /* pagination code from http://www.bootply.com/lxa0FF9yhw */
 $.fn.pageMe = function(opts){
     var $this = this,
